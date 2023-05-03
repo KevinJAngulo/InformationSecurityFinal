@@ -11,6 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
         <style>
            body {
 			background-image: url('background.jpg');
@@ -18,13 +19,37 @@
 			background-repeat: no-repeat;
 			background-position: center;
 		    }
-
+            .container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		    }
         </style>
+
+        
     </head>
-    <body>      
-        <button class="btn btn-outline-danger" 	position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: traonclick="window.location.href='http://www.example.com';">Click Me</button>
+    <body>    
+        
+        <div class="container">
+            <button class="btn btn-outline-danger" onclick="getLocation()">Click Me</button>
+        </div>
+        <script>
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                } else {
+                    alert("Geolocation is not supported by this browser.");
+                }
+            }
+    
+            function showPosition(position) {
+                var latitude = position.coords.latitude;
+                var longitude = position.coords.longitude;
+                var location = "Latitude: " + latitude + "<br>Longitude: " + longitude;
+                document.getElementById("location").innerHTML = location;
+            }
+        
     </body>
 </html>
