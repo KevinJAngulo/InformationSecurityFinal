@@ -2,7 +2,6 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -11,6 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <style>
            body {
 			background-image: url('background.jpg');
@@ -18,27 +18,10 @@
 			background-repeat: no-repeat;
 			background-position: center;
 		    }
-            .button {
-                display: inline-block;
-                padding: 10px 20px;
-                background-color: #0099ff;
-                color: #fff;
-                font-size: 24px;
-                font-weight: bold;
-                border-radius: 50px;
-                cursor: pointer;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
 
-            .button:hover {
-			background-color: #008ae6;
-		    }
         </style>
     </head>
     <body>      
-        <button class="button" onclick="window.location.href='http://www.example.com';">Click Me</button>
+        <button class="btn btn-outline-danger" onclick="window.location.href='http://www.example.com';">Click Me</button>
     </body>
 </html>
