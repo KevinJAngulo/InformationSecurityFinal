@@ -19,11 +19,18 @@
 
         <style>
             body {
-            /*<a href="https://www.freepik.com/free-vector/network-mesh-wire-digital-technology-background_10136775.htm#query=website%20background&position=1&from_view=keyword&track=ais">Image by starline</a> on Freepik*/
-			background-image: url('background.jpg');
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center;
+                /*<a href="https://www.freepik.com/free-vector/network-mesh-wire-digital-technology-background_10136775.htm#query=website%20background&position=1&from_view=keyword&track=ais">Image by starline</a> on Freepik*/
+                background-image: url('background.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+		    }
+            .home {
+             /*<a href="https://www.freepik.com/free-vector/network-mesh-wire-digital-technology-background_10136775.htm#query=website%20background&position=1&from_view=keyword&track=ais">Image by starline</a> on Freepik*/
+                background-image: url('background.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
 		    }
             .IS{
                 /* <a href="https://www.freepik.com/free-photo/3d-internet-secuirty-badge_38007822.htm#query=cyber%20security&position=5&from_view=keyword&track=ais">Image by kjpargeter</a> on Freepik*/
@@ -38,6 +45,10 @@
                 background-size: cover;
 			    background-repeat: no-repeat;
 			    background-position: center;
+            }
+            .scam {
+                padding: 20px;
+                margin-bottom: 30px;
             }
             .password{
                 /* <a href="https://www.freepik.com/free-vector/global-networking-technology-background-digital-communication_16406291.htm#query=vpn&position=7&from_view=keyword&track=sph">Image by rawpixel.com</a> on Freepik*/
@@ -90,7 +101,7 @@
         </style>        
     </head>
     <body>    
-        <div role ="main" >
+        <div role ="main" class="home">
             <div class="pos-f-t">
                 <div class="collapse" id="navbarToggleExternalContent">
                     <div class="bg-dark p-4">
@@ -124,7 +135,7 @@
             <p id="location" class="texto2">This is your location: </p>
             <p id="deviceInfo" class="texto2">This is your device: </p>
             <p id="ip" class="texto2">This is your IP: </p>
-            <p class="texto2">This shows how easy a website can obtain crucial informstion from the click of a button!</p>
+            <p class="texto2">This shows how easy a website can obtain crucial informstion from just the click of a button!</p>
             </div>
         </div>
         <section id= "section1" class = "vpn hide" role = "Information Secuirty">
@@ -154,17 +165,15 @@
         <section id= "section3" class = "vpn hide" role = "website scams">
             <div class = "container">
                 <header>
-                    <h1 class="texto">Popular website scams</h1>
+                    <h1 class="texto">Popular website scams:</h1>
                 </header>
-                <div class="box">
-                    <p class="texto">
-                        VPNs, or Virtual Private Networks, are online tools that allow users to create a secure and private connection to a network, even over a public network like the internet. VPNs use encryption and tunneling protocols to establish a secure connection between the user's device and the VPN server, protecting their data and online activity from being intercepted or monitored by third parties. There are many reasons to use a VPN, including improving online security, privacy, and access to restricted content. VPNs can also be used to remotely access resources on a remote network, like a company's internal network or personal cloud storage.
-                    </p>
-                    <ul class="texto">
-                        <li>Be cautious of emails or links from unknown sources</li>
-                        <li>Check the URL and make sure it's legitimate</li>
-                        <li>Never provide sensitive information unless you're sure it's safe</li>
-                    </ul>
+                <div class="box scam texto">
+                    <h2>Phishing Scams</h2>
+                    <p>Phishing scams are designed to trick users into providing personal information such as usernames, passwords, credit card details, and other sensitive data. Typically, scammers create fake websites that look like legitimate ones, and then send emails or messages that encourage users to click on a link that takes them to the fake website. Once users enter their personal information, scammers use it for their own purposes.</p>
+                    <h2>Fake Shopping Sites</h2>
+                    <p>Fake shopping sites are designed to trick users into providing their credit card details for products that don't exist or will never be shipped. These sites may look professional, but they are often easy to spot as the prices are too good to be true, and the sites lack contact information or customer service.</p>
+                    <h2>Tech Support Scams</h2>
+                    <p>Tech support scams are designed to trick users into thinking that their computer is infected with a virus or malware. Scammers create fake tech support websites that claim to offer help with computer problems. They may ask for remote access to your computer or charge you for unnecessary services.</p>
                 </div>
             </div>
         </section>
@@ -189,6 +198,17 @@
                         document.getElementById('password').innerHTML = password;
                       }
                     </script>
+                </div>
+            </div>
+        </section>
+        <section id= "section5" class = "vpn hide" role = "closing notes">
+            <div class = "container">
+                <header>
+                    <h1 class="texto">Closing notes:</h1>
+                </header>
+                <div class="texto">
+                    <p>Security is of utmost importance in today's world where cyber threats are becoming increasingly sophisticated. It is important to take measures to protect your personal information and sensitive data from falling into the wrong hands. By practicing good security habits such as creating strong passwords, being cautious about suspicious emails, and using secure websites, you can significantly reduce the risk of falling victim to cyber scams and attacks. Remember, prevention is always better than cure when it comes to cybersecurity. Stay vigilant and stay safe!</p>
+                    
                 </div>
             </div>
         </section>
