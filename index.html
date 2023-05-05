@@ -11,14 +11,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        
+        <script>
+            window.onload = function() {
+              window.scrollTo(0, 0);
+            };
+          </script>
+
         <style>
-           body {
+            body {
+            /*<a href="https://www.freepik.com/free-vector/network-mesh-wire-digital-technology-background_10136775.htm#query=website%20background&position=1&from_view=keyword&track=ais">Image by starline</a> on Freepik*/
 			background-image: url('background.jpg');
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
 		    }
+            .IS{
+                /* <a href="https://www.freepik.com/free-photo/3d-internet-secuirty-badge_38007822.htm#query=cyber%20security&position=5&from_view=keyword&track=ais">Image by kjpargeter</a> on Freepik*/
+                background-image: url('background2.jpg');
+                background-size: cover;
+			    background-repeat: no-repeat;
+			    background-position: center;
+            }
+            .vpn{
+                /* <a href="https://www.freepik.com/free-vector/global-networking-technology-background-digital-communication_16406291.htm#query=vpn&position=7&from_view=keyword&track=sph">Image by rawpixel.com</a> on Freepik*/
+                background-image: url('background3.jpg');
+                background-size: cover;
+			    background-repeat: no-repeat;
+			    background-position: center;
+            }
+            .password{
+                /* <a href="https://www.freepik.com/free-vector/global-networking-technology-background-digital-communication_16406291.htm#query=vpn&position=7&from_view=keyword&track=sph">Image by rawpixel.com</a> on Freepik*/
+                background-image: url('background4.jpeg');
+                background-size: cover;
+			    background-repeat: no-repeat;
+			    background-position: center;
+            }
             .container {
 			display: flex;
 			flex-direction: column;
@@ -26,15 +53,144 @@
 			justify-content: center;
 			height: 100vh;
 		    }
-        </style>
+            .texto {
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color:whitesmoke;
+            }
+            .texto2 {
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color:black;
+            }
+            .mySpanClass { 
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color:whitesmoke;
+                font-size:1.3em; 
+            }
+            .content {
+                padding: 3em;
+            }
+            .hide {
+                opacity: 0;
+                transition: opacity 0.5s ease;
+            }
 
-        
+            .visible {
+                opacity: 1;
+                transition: opacity 0.5s ease;
+            }
+            section {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-shadow:black;
+            }
+</style>
+            
+        </style>        
     </head>
     <body>    
-        
-        <div class="container">
-            <button class="btn btn-outline-danger" onclick="getLocation()">Click Me</button>
+        <div role ="main" >
+            <div class="pos-f-t">
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="bg-dark p-4">
+                        <h1 class="texto">Resources:</h1>
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="mySpanClass" href="#section1">What is Information Security?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="mySpanClass" href="#section2">What are VPNs?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="mySpanClass" href="#section3">Popular Scams</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="mySpanClass" href="#section4">Passwords</a>
+                            </li>
+                        </ul>
+                        <span class="text-muted" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">By: Ahamed Bilal Shahul Hameed, Ian Reyes, Louis Melendez, and Kevin Angulo Lezama.</span>
+                    </div>
+                </div>
+                <nav class="navbar navbar-dark bg-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+            </div>
+            <div class="container">
+            <button id="button" class="btn btn-outline-danger" onclick="getLocation(); getIP();">Click Me!</button>
+            <p></p>
+            <p id="location" class="texto2">This is your location: </p>
+            <p id="deviceInfo" class="texto2">This is your device: </p>
+            <p id="ip" class="texto2">This is your IP: </p>
+            </div>
         </div>
+        <section id= "section1" class = "vpn hide" role = "Information Secuirty">
+            <div class = "container">
+                <header>
+                    <h1 class="texto ">Information Security</h1>
+                </header>
+                <div class="box" >
+                    <p class="texto">
+                        Information security refers to the protection of information and information systems from unauthorized access, use, disclosure, disruption, modification, or destruction. It involves the implementation of policies, procedures, and technologies to safeguard information from a wide range of threats, including cyber attacks, data breaches, theft, and natural disasters.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id= "section2" class = "vpn hide" role = "VPNs">
+            <div class = "container">
+                <header>
+                    <h1 class="texto">VPNs</h1>
+                </header>
+                <div>
+                    <p class="texto">
+                        VPNs, or Virtual Private Networks, are online tools that allow users to create a secure and private connection to a network, even over a public network like the internet. VPNs use encryption and tunneling protocols to establish a secure connection between the user's device and the VPN server, protecting their data and online activity from being intercepted or monitored by third parties. There are many reasons to use a VPN, including improving online security, privacy, and access to restricted content. VPNs can also be used to remotely access resources on a remote network, like a company's internal network or personal cloud storage.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id= "section3" class = "vpn hide" role = "website scams">
+            <div class = "container">
+                <header>
+                    <h1 class="texto">Popular website scams</h1>
+                </header>
+                <div class="box">
+                    <p class="texto">
+                        VPNs, or Virtual Private Networks, are online tools that allow users to create a secure and private connection to a network, even over a public network like the internet. VPNs use encryption and tunneling protocols to establish a secure connection between the user's device and the VPN server, protecting their data and online activity from being intercepted or monitored by third parties. There are many reasons to use a VPN, including improving online security, privacy, and access to restricted content. VPNs can also be used to remotely access resources on a remote network, like a company's internal network or personal cloud storage.
+                    </p>
+                    <ul class="texto">
+                        <li>Be cautious of emails or links from unknown sources</li>
+                        <li>Check the URL and make sure it's legitimate</li>
+                        <li>Never provide sensitive information unless you're sure it's safe</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id= "section4" class = "vpn hide" role = "passwords">
+            <div class = "container">
+                <header>
+                    <h1 class="texto">What makes a strong password?</h1>
+                </header>
+                <div class="texto">
+                    <p>A strong password typically includes a combination of length, complexity, unpredictability, and uniqueness. It's important to use a unique password for each account and to change your passwords regularly.</p>
+                    <h2>Example Password Generator</h2>
+                    <p>Click the button below to generate a random password using a combination of uppercase and lowercase letters, numbers, and symbols:</p>
+                    <button class="btn btn-outline-danger"onclick="generatePassword()">Generate Password</button>
+                    <p id="password"></p>
+                    <script>
+                      function generatePassword() {
+                        var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-={}[]|\\:;"\'<>,.?/~`';
+                        var password = '';
+                        for (var i = 0; i < 12; i++) {
+                          password += characters.charAt(Math.floor(Math.random() * characters.length));
+                        }
+                        document.getElementById('password').innerHTML = password;
+                      }
+                    </script>
+                </div>
+            </div>
+        </section>
         <script>
             function getLocation() {
                 if (navigator.geolocation) {
@@ -45,11 +201,49 @@
             }
     
             function showPosition(position) {
+                console.log("here")
                 var latitude = position.coords.latitude;
                 var longitude = position.coords.longitude;
                 var location = "Latitude: " + latitude + "<br>Longitude: " + longitude;
-                alert(location);
+                var deviceInfo = "Device: " + navigator.userAgent;
+                document.getElementById("location").innerHTML = location;
+                document.getElementById("deviceInfo").innerHTML = deviceInfo;
+
+                
             }
+            function showOnScroll() {
+            const sections = document.querySelectorAll('.hide');
+            sections.forEach(section => {
+                if (window.scrollY > section.offsetTop - window.innerHeight / 2) {
+                section.classList.remove('hide');
+                section.classList.add('visible');
+                } else {
+                section.classList.remove('visible');
+                section.classList.add('hide');
+                }
+            });
+            }
+
+            window.addEventListener('scroll', showOnScroll);
+            function getIP() {
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', 'https://api.ipify.org?format=json');
+                xhr.onload = function() {
+                if (xhr.status === 200) {
+                    var data = JSON.parse(xhr.responseText);
+                    document.getElementById('ip').innerHTML = data.ip;
+                } else {
+                    console.log('Error: ' + xhr.status);
+                }
+                };
+                xhr.send();
+            }
+
+
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         
     </body>
 </html>
